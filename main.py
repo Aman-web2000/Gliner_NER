@@ -17,7 +17,7 @@ def ner_model(text,model_version):
 
         # Labels for entity prediction
         # Most GLiNER models should work best when entity types are in lower case or title case
-        labels = ["Person", "Award", "Date", "Competitions", "Teams"]
+        labels = ["Account", "Sector", "Industry ", "Teams"]
 
         entities=model.predict_entities(text, labels, threshold=0.5)
 
