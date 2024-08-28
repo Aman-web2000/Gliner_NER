@@ -10,5 +10,9 @@ model_version=st.selectbox("Select a gliner model",["urchade/gliner_mediumv2.1"]
 if st.button("run"):
     entities=ner_model(text, model_version=model_version)
 
+    output={}
+
     for entity in entities:
-        st.write(entity['text'],"=>",entity['label'])
+        output[entity['text']]=entity['label']
+
+    st.write(output)
