@@ -21,5 +21,4 @@ if st.button("run"):
 
     time_diff=(end_time-start_time).total_seconds()
 
-    st.write(f"Processing time:{time_diff}s")
-    st.write(output)
+    st.write(f"Processing time:{time_diff}s \n\n\{output}")
