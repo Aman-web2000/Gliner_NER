@@ -1,5 +1,6 @@
 from gliner import GLiNER
 import streamlit as st
+from dict import labels
 
 
 def ner_model(text,model_version):
@@ -17,7 +18,7 @@ def ner_model(text,model_version):
 
         # Labels for entity prediction
         # Most GLiNER models should work best when entity types are in lower case or title case
-        labels = ["Account", "Industry",'Consumer', 'ERI', 'Energy Resource & chemicals', 'Financial Services', 'FS', 'LSHC', 'Life science Health care', "Sector", "sub sector","Offering portfolio","Offering","Market Offering","Leader"]
+        
 
         entities=model.predict_entities(text, labels, threshold=0.5)
 
