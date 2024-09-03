@@ -1,4 +1,4 @@
-label = ["Account", "Industry","Company","Organization","CORPORATION","INC", "Sector", "Sub-Sector","Portfolio","Offering","Market Offering","Leader"]
+label = ["Account", "Industry","Company","Organization","CORPORATION","INC", "Sector", "Sub-Sector","Portfolio","Offering","Market Offering","Leader", "Person"]
 
 
 industry= ['Financial Services', 'Consumer', 'Technology, Media & Telecom',
