@@ -1,6 +1,6 @@
 from gliner import GLiNER
 import streamlit as st
-from dict import labels
+from dict import label
 
 
 def ner_model(text,model_version):
@@ -20,7 +20,7 @@ def ner_model(text,model_version):
         # Most GLiNER models should work best when entity types are in lower case or title case
         
 
-        entities=model.predict_entities(text, labels, threshold=0.5)
+        entities=model.predict_entities(text, label, threshold=0.5)
 
         return entities
 

@@ -1,4 +1,4 @@
-label = ["Account", "Industry",'Consumer', 'ERI', 'Energy Resource & chemicals', 'Financial Services', 'FS', 'LSHC', 'Life science Health care', "Sector", "sub sector","Offering portfolio","Offering","Market Offering","Leader"]
+label = ["Account", "Industry","Company","Organization","CORPORATION","INC", "Sector", "Sub-Sector","Portfolio","Offering","Market Offering","Leader"]
 
 
 industry= ['Financial Services', 'Consumer', 'Technology, Media & Telecom',
@@ -303,3 +303,5 @@ market_offering=['Financial Risk & Reporting', 'Strategy & Diligence',
        'CentralSight - SaaS', 'Reimagine Cold Chain - SW']
 
 labels = label+market_offering+offering+offering_portfolio+sector+sub_sector+market_offering+industry
+
+print(labels)
